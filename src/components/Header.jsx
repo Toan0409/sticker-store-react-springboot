@@ -2,29 +2,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket, faTags } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
+    const navLinkClass = "text-center text-lg font-primary font-semibold text-primary py-2";
+
     return (
-        <header className="header">
-            <div className="container">
-                <a href="/" className="link">
+        <header className="border-b border-gray-300 sticky top-0 z-20 bg-gray-100">
+            <div className="flex justify-between items-center mx-auto max-w-[1152px] px-6 py-4">
+                <a href="/" className={navLinkClass}>
                     <FontAwesomeIcon icon={faTags} className="fa-icon" />
                     <span className="brand-title">Eazy Stickers</span>
                 </a>
-                <nav className="nav">
-                    <ul>
+                <nav className="flex items-center py-2 z-10">
+                    <ul className="flex space-x-6">
                         <li>
-                            <a href="/" className="nav-link">Home</a>
+                            <a href="/" className={navLinkClass}>Home</a>
                         </li>
                         <li>
-                            <a href="/about" className="nav-link">About</a>
+                            <a href="/about" className={navLinkClass}>About</a>
                         </li>
                         <li>
-                            <a href="/contact" className="nav-link">Contact</a>
+                            <a href="/contact" className={navLinkClass}>Contact</a>
                         </li>
                         <li>
-                            <a href="/login" className="nav-link">Login</a>
+                            <a href="/login" className={navLinkClass}>Login</a>
                         </li>
                         <li>
-                            <a href="/cart" className="nav-link">
+                            <a href="/cart" className="text-primary py-2">
                                 <FontAwesomeIcon icon={faShoppingBasket} className="fa-icon" />
                             </a>
                         </li>
