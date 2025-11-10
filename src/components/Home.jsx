@@ -3,7 +3,7 @@ import PageHeading from "./PageHeading";
 import ProductListings from "./ProductListings";
 export default function Home() {
     return (
-        <div className="home-container">
+        <div className="max-w-[1152px] mx-auto px-6 py-8">
 
             <PageHeading title="Explore Eazy Stickers!">
                 Add a touch of creativity to your world with our vibrant stickers. Perfect for any occasion!
