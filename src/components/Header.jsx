@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBasket, faTags, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import {
+    faShoppingBasket,
+    faTags,
+    faSun,
+    faMoon
+} from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+
 
 export default function Header() {
     const [theme, setTheme] = useState(() => {
@@ -46,7 +52,7 @@ export default function Header() {
 
                     <ul className="flex space-x-6">
                         <li>
-                            <a href="/" className={navLinkClass}>Home</a>
+                            <a href="/home" className={navLinkClass}>Home</a>
                         </li>
                         <li>
                             <a href="/about" className={navLinkClass}>About</a>
