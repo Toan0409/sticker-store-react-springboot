@@ -17,7 +17,7 @@ export default function Contact() {
     useEffect(() => {
         if (actionData?.success) {
             formRef.current?.reset();
-            renderToStaticMarkup.success("Message sent successfully!");
+            toast.success("Message sent successfully!");
         }
     }, [actionData]);
 
